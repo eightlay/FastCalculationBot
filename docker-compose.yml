@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  server:
+    build: .
+    env_file:
+      - .env
+    command: python3 main.py
+    restart: always
